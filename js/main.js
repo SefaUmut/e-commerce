@@ -4,7 +4,7 @@ import searchFunc from "./search.js";
 
 //! add product to localStorage start
 (async function () {
-  const photos = await fetch("/E-TICARET/js/data.json");
+  const photos = await fetch("/js/data.json");
   const data = await photos.json();
   await data ? localStorage.setItem("products", JSON.stringify(data)) : [];
   productsFunc(data);
