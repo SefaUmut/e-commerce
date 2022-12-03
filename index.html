@@ -15,6 +15,7 @@ CSS : RESET CSS, NORMALİZE CSS -->
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>E-Commerce</title>
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
   <!--! Glide.js Css CDN  -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.6.0/css/glide.core.min.css">
   <!--! Boostrap Icons CDN  -->
@@ -75,7 +76,7 @@ CSS : RESET CSS, NORMALİZE CSS -->
               </li>
             </ul>
           </div>
-          <div class="header-top-left">
+          <div class="header-top-right">
             <ul class="top-menu-list">
               <li class="top-menu-list-item">
                 <a href="index.html" class="top-menu-link active">
@@ -390,14 +391,14 @@ CSS : RESET CSS, NORMALİZE CSS -->
           <a href="#" class="btn btn-lg btn-primary">Explore Now</a>
         </div>
       </div>
-      <div class="slider-buttons">
+      <!-- <div class="slider-buttons">
         <button onclick="plusSlide(-1)">
           <i class="bi bi-chevron-left"></i>
         </button>
         <button onclick="plusSlide(1)">
           <i class="bi bi-chevron-right"></i>
         </button>
-      </div>
+      </div> -->
       <div class="slider-dots">
         <button class="slider-dot active" onclick="currentSlide(1)">
           <span></span>
@@ -415,37 +416,37 @@ CSS : RESET CSS, NORMALİZE CSS -->
 
   <!--! policy start  -->
   <section class="policy">
-    <div class="container">
-      <ul class="policy-list">
-        <li class="policy-item">
-          <i class="bi bi-truck"></i>
-          <div class="policy-texts">
-            <strong>FREE DELIVERY</strong>
-            <span>From $59.89</span>
-          </div>
-        </li>
-        <li class="policy-item">
-          <i class="bi bi-headset"></i>
-          <div class="policy-texts">
-            <strong>SUPPORT 24/7</strong>
-            <span>Online 24 hours</span>
-          </div>
-        </li>
-        <li class="policy-item">
-          <i class="bi bi-arrow-clockwise"></i>
-          <div class="policy-texts">
-            <strong> 30 DAYS RETURN</strong>
-            <span>Simply return it within 30 days</span>
-          </div>
-        </li>
-        <li class="policy-item">
-          <i class="bi bi-credit-card"></i>
-          <div class="policy-texts">
-            <strong> PAYMENT METHOD</strong>
-            <span>Secure Payment</span>
-          </div>
-        </li>
+    <div data-flickity='{ "freeScroll": true, "contain": true, "prevNextButtons": false, "pageDots": false }'>
+      <!-- <ul class="policy-list"> -->
+      <ul class="policy-item carousel-cell">
+        <i class="bi bi-truck"></i>
+        <div class="policy-texts">
+          <strong>FREE DELIVERY</strong>
+          <span>From $59.89</span>
+        </div>
       </ul>
+      <ul class="policy-item carousel-cell">
+        <i class="bi bi-headset"></i>
+        <div class="policy-texts">
+          <strong>SUPPORT 24/7</strong>
+          <span>Online 24 hours</span>
+        </div>
+      </ul>
+      <ul class="policy-item carousel-cell ">
+        <i class="bi bi-arrow-clockwise"></i>
+        <div class="policy-texts">
+          <strong> 30 DAYS RETURN</strong>
+          <span>Simply return it within 30 days</span>
+        </div>
+      </ul>
+      <ul class="policy-item carousel-cell">
+        <i class="bi bi-credit-card"></i>
+        <div class="policy-texts">
+          <strong> PAYMENT METHOD</strong>
+          <span>Secure Payment</span>
+        </div>
+      </ul>
+      <!-- </ul> -->
     </div>
   </section>
   <!--! policy end  -->
@@ -510,14 +511,14 @@ CSS : RESET CSS, NORMALİZE CSS -->
         <div class="glide__track" data-glide-el="track">
           <ul class="product-list glide__slides" id="product-list" />
         </div>
-        <div class="glide__arrows" data-glide-el="controls">
+        <!-- <div class="glide__arrows" data-glide-el="controls">
           <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
             <i class="bi bi-chevron-left"></i>
           </button>
           <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
             <i class="bi bi-chevron-right"></i>
           </button>
-        </div>
+        </div> -->
       </div>
     </div>
   </section>
@@ -775,14 +776,14 @@ CSS : RESET CSS, NORMALİZE CSS -->
             </li>
           </ul>
         </div>
-        <div class="glide__arrows" data-glide-el="controls">
+        <!-- <div class="glide__arrows" data-glide-el="controls">
           <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
             <i class="bi bi-chevron-left"></i>
           </button>
           <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
             <i class="bi bi-chevron-right"></i>
           </button>
-        </div>
+        </div> -->
       </div>
     </div>
   </section>
@@ -857,37 +858,88 @@ CSS : RESET CSS, NORMALİZE CSS -->
 
   <!--! brands start  -->
   <section class="brands">
-    <!-- <div class="container"> -->
-    <ul class="brand-list">
-      <li class="brand-item">
+    <div data-flickity='{ "freeScroll": true, "contain": true, "prevNextButtons": false, "pageDots": false }'>
+      <!-- <div class="container"> 
+    <ul class="brand-list">-->
+      <ul class="brand-item carousel-cell">
         <a href="#">
           <img src="img/brands/logo1.png" alt="">
         </a>
-      </li>
-      <li class="brand-item">
+      </ul>
+      <ul class="brand-item carousel-cell">
         <a href="#">
           <img src="img/brands/logo2.png" alt="">
         </a>
-      </li>
-      <li class="brand-item">
+      </ul>
+      <ul class="brand-item carousel-cell">
         <a href="#">
           <img src="img/brands/logo3.png" alt="">
         </a>
-      </li>
-      <li class="brand-item">
+      </ul>
+      <ul class="brand-item carousel-cell">
         <a href="#">
           <img src="img/brands/logo4.png" alt="">
         </a>
-      </li>
-      <li class="brand-item">
+      </ul>
+      <ul class="brand-item carousel-cell">
         <a href="#">
           <img src="img/brands/logo5.png" alt="">
         </a>
-      </li>
-    </ul>
-    <!-- </div> -->
+      </ul>
+      <ul class="brand-item carousel-cell">
+        <a href="#">
+          <img src="img/brands/logo1.png" alt="">
+        </a>
+      </ul>
+      <ul class="brand-item carousel-cell">
+        <a href="#">
+          <img src="img/brands/logo2.png" alt="">
+        </a>
+      </ul>
+
+    </div>
+    <!--  </ul>
+   </div> -->
   </section>
   <!--! brands end  -->
+
+
+  <!-- <div class="brands">
+    <div class="carousel">
+      <div class="image"> <a href="#">
+          <img src="img/brands/logo1.png" alt="">
+        </a></div>
+      <div class="image"> <a href="#">
+          <img src="img/brands/logo2.png" alt="">
+        </a></div>
+      <div class="image"> <a href="#">
+          <img src="img/brands/logo3.png" alt="">
+        </a></div>
+      <div class="image"> <a href="#">
+          <img src="img/brands/logo4.png" alt="">
+        </a></div>
+      <div class="image"> <a href="#">
+          <img src="img/brands/logo5.png" alt="">
+        </a></div>
+        <div class="image"> <a href="#">
+          <img src="img/brands/logo1.png" alt="">
+        </a></div>
+      <div class="image"> <a href="#">
+          <img src="img/brands/logo2.png" alt="">
+        </a></div>
+      <div class="image"> <a href="#">
+          <img src="img/brands/logo3.png" alt="">
+        </a></div>
+        <div class="image"> <a href="#">
+          <img src="img/brands/logo4.png" alt="">
+        </a></div>
+        
+      <div class="image"><span>Landscapes</span></div>
+        <div class="image"><span>Follow</span></div>
+        <div class="image"><span>Like</span></div>
+        <div class="image"><span>Comment</span></div> -->
+  </div>
+  </div>
 
   <!--! campaign single start  -->
   <section class="campaign-single">
@@ -1093,6 +1145,7 @@ CSS : RESET CSS, NORMALİZE CSS -->
   <script src="js/slider.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
   <script src="js/glide.js" type="module"></script>
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </body>
 
 </html>

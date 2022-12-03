@@ -134,6 +134,40 @@ input[type="number"]::-webkit-inner-spin-button {
 
 /* base responsive  */
 
+@media (max-width: 640px) {
+  .header-top-right {
+    display: none !important;
+  }
+  .container {
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 15px;
+  }
+  
+ 
+}
+
+@media (max-width: 1024px) {
+  .container {
+    padding: 0 30px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .container {
+    padding: 0 50px;
+  }
+ 
+}
+
+/* base responsive end  */
+
+
+/* 
 @media (max-width: 1200px) {
   .container {
     max-width: 992px;
@@ -162,4 +196,4 @@ input[type="number"]::-webkit-inner-spin-button {
   .container {
     max-width: 350px;
   }
-}
+} */
