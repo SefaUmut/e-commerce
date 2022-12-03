@@ -11,9 +11,9 @@ header {
 
 .global-notification {
   background-color: rgb(79 70 229);
-  padding: 14px 0;
+  padding: 10px 0;
   text-align: center;
-  font-size: 12px;
+  font-size: 11px;
   color: white;
 }
 
@@ -355,7 +355,7 @@ header .menu-dropdown-content a:hover {
 /*! header end  */
 
 /* header responsive */
-@media (max-width: 650px) {
+@media (max-width: 768px) {
   .header-center {
     position: fixed;
     top: 0;
@@ -365,6 +365,10 @@ header .menu-dropdown-content a:hover {
     border-right: 1px solid #dee0ea;
     z-index: 2;
     transition: 0.5s ease all;
+  }
+
+  .global-notification {
+    display: none;
   }
 
   .header-center .bi-x-circle {
