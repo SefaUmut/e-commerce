@@ -8,8 +8,17 @@
 
 .footer .footer-row-wrapper {
   display: flex;
-  justify-content: space-around;
-  column-gap: 90px;
+  justify-content: space-between;
+  /* justify-content: space-around;
+  column-gap: 90px; */
+}
+
+.footer-row-wrapper .footer-subscribe-wrapper {
+  margin-right: 30px;
+}
+
+.footer-row-wrapper .footer-contact-wrapper {
+  margin-left: 30px;
 }
 
 .footer .subscribe-title,
@@ -38,13 +47,13 @@
   margin-bottom: 10px;
 }
 
-.footer .footer-subscribe-bottom form > input {
+.footer .footer-subscribe-bottom form>input {
   flex: 1;
   height: 48px;
   border: none;
 }
 
-.footer .footer-subscribe-bottom form > button {
+.footer .footer-subscribe-bottom form>button {
   height: 48px !important;
   border-color: #fff;
   background-color: #000;
@@ -65,7 +74,7 @@
   column-gap: 10px;
 }
 
-.footer .footer-contact-bottom .download-app a img{
+.footer .footer-contact-bottom .download-app a img {
   width: 120px;
   height: 50px;
   object-fit: cover;
@@ -81,18 +90,19 @@
 
 .widgets-row .footer-widgets {
   display: flex;
-  justify-content: space-around;
   flex-wrap: wrap;
-  gap: 30px;
+  justify-content: space-between;
   font-weight: 300;
 }
 
-.widgets-row .footer-widgets > div {
-  max-width: 20%;
+.widgets-row .footer-widgets .widget-links {
+  display: flex;
+  justify-content: space-between;
+  min-width: 50%;
 }
 
-.widgets-row .footer-widgets > .brand-info {
-  max-width: 80%;
+.widgets-row .footer-widgets>.brand-info {
+  min-width: 40%;
 }
 
 .footer-widgets .brand-info .footer-desc {
@@ -153,18 +163,19 @@
 
 .copyright-row .footer-payment a img {
   height: 25px;
-  object-fit: cover;
+  width: 320px;
 }
 
 .footer-copyright .footer-menu-list .list-item:not(:last-child) {
   padding-right: 10px;
   border-right: 1px solid #dee0ea;
 }
+
 /*! copyright end  */
 
 /*! responsive  */
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
   .footer .footer-row-wrapper {
     flex-direction: column;
     row-gap: 20px;
@@ -174,20 +185,25 @@
     margin-bottom: 20px;
   }
 
+  .footer-row-wrapper .footer-subscribe-wrapper,
+  .footer-row-wrapper .footer-contact-wrapper {
+    margin: 0;
+  }
+
   .footer-widgets .brand-info .footer-desc {
     width: unset;
   }
 
-  .widgets-row .footer-widgets > div {
+  .widgets-row .footer-widgets>div {
     flex: unset !important;
+  }
+
+  .widget-links {
+    width: 100%;
   }
 
   .footer .brand-info {
     margin-bottom: 20px;
-  }
-
-  .copyright-row .footer-payment a img {
-   display: none;
   }
 
   .footer-copyright {
