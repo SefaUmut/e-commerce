@@ -126,4 +126,8 @@
   cursor: pointer;
 }
 
+.form-submit {
+ margin-bottom: 20px;
+}
+
 /*! comment form end  */
