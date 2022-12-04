@@ -6,6 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Shop</title>
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
     <!--! Glide.js Css CDN  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Glide.js/3.6.0/css/glide.core.min.css">
     <!--! Boostrap Icons CDN  -->
@@ -17,265 +18,265 @@
     <!--! header start  -->
     <header>
         <div class="global-notification">
-            <div class="container">
-                <p>
-                    SUMMER SALE FOR ALL SWIM SUITS AND FREE EXPRESS INTERNATIONAL DELIVERY
-                    - OFF 50%!
-                    <a href="shop.html">SHOP NOW</a>
-                </p>
-            </div>
+          <div class="container">
+            <p>
+              SUMMER SALE FOR ALL SWIM SUITS AND FREE EXPRESS INTERNATIONAL DELIVERY
+              - OFF 50%!
+              <a href="shop.html">SHOP NOW</a>
+            </p>
+          </div>
         </div>
         <div class="header-top">
-            <div class="container">
-                <div class="top-header-wrapper">
-                    <div class="header-top-left">
-                        <ul class="top-menu-list">
-                            <li class="top-menu-list-item">
-                                <a href="index.html" class="top-menu-link active">
-                                    USD
-                                    <i class="bi bi-chevron-down"></i>
-                                </a>
-                                <div class="top-menu-dropdown-wrapper">
-                                    <ul class="top-menu-dropdown-content">
-                                        <li>
-                                            <a href="#">EUR</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">USD</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                        </ul>
-                        <ul class="top-menu-list">
-                            <li class="top-menu-list-item">
-                                <a href="index.html" class="top-menu-link active">
-                                    ENG
-                                    <i class="bi bi-chevron-down"></i>
-                                </a>
-                                <div class="top-menu-dropdown-wrapper">
-                                    <ul class="top-menu-dropdown-content">
-                                        <li>
-                                            <a href="#">English</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Turkish</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </li>
-                        </ul>
+          <div class="container">
+            <div class="top-header-wrapper">
+              <div class="header-top-left">
+                <ul class="top-menu-list">
+                  <li class="top-menu-list-item">
+                    <a href="index.html" class="top-menu-link active">
+                      USD
+                      <i class="bi bi-chevron-down"></i>
+                    </a>
+                    <div class="top-menu-dropdown-wrapper">
+                      <ul class="top-menu-dropdown-content">
+                        <li>
+                          <a href="#">EUR</a>
+                        </li>
+                        <li>
+                          <a href="#">USD</a>
+                        </li>
+                      </ul>
                     </div>
-                    <div class="header-top-left">
-                        <ul class="top-menu-list">
-                            <li class="top-menu-list-item">
-                                <a href="index.html" class="top-menu-link active">
-                                    CALL: +0123 456 789
-                                    <i class="bi bi-phone-flip"></i>
-                                </a>
-                            </li>
-                        </ul>
-                        <ul class="top-menu-list">
-                            <li class="top-menu-list-item">
-                                <a href="index.html" class="top-menu-link active">
-                                    CONTACT US
-                                    <i class="bi bi-person-rolodex"></i>
-                                </a>
-                            </li>
-                        </ul>
-                        <ul class="top-menu-list">
-                            <li class="top-menu-list-item">
-                                <a href="index.html" class="top-menu-link active">
-                                    ABOUT US
-                                    <i class="bi bi-bag"></i>
-                                </a>
-                            </li>
-                        </ul>
+                  </li>
+                </ul>
+                <ul class="top-menu-list">
+                  <li class="top-menu-list-item">
+                    <a href="index.html" class="top-menu-link active">
+                      ENG
+                      <i class="bi bi-chevron-down"></i>
+                    </a>
+                    <div class="top-menu-dropdown-wrapper">
+                      <ul class="top-menu-dropdown-content">
+                        <li>
+                          <a href="#">English</a>
+                        </li>
+                        <li>
+                          <a href="#">Turkish</a>
+                        </li>
+                      </ul>
                     </div>
-                </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="header-top-right">
+                <ul class="top-menu-list">
+                  <li class="top-menu-list-item">
+                    <a href="index.html" class="top-menu-link active">
+                      CALL: +0123 456 789
+                      <i class="bi bi-phone-flip"></i>
+                    </a>
+                  </li>
+                </ul>
+                <ul class="top-menu-list">
+                  <li class="top-menu-list-item">
+                    <a href="index.html" class="top-menu-link active">
+                      CONTACT US
+                      <i class="bi bi-person-rolodex"></i>
+                    </a>
+                  </li>
+                </ul>
+                <ul class="top-menu-list">
+                  <li class="top-menu-list-item">
+                    <a href="index.html" class="top-menu-link active">
+                      ABOUT US
+                      <i class="bi bi-bag"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
             </div>
+          </div>
         </div>
         <div class="header-row">
-            <div class="container">
-              <div class="header-wrapper">
-                <div class="header-mobile">
-                  <i class="bi bi-list" id="btn-menu"></i>
-                </div>
-                <div class="header-left">
-                  <a href="index.html" class="logo">LOGO</a>
-                </div>
-                <div class="header-center" id="sidebar">
-                  <nav class="navigation">
-                    <ul class="menu-list">
-                      <li class="menu-list-item">
-                        <a href="index.html" class="menu-link active">
-                          Home
-                          <i class="bi bi-chevron-down"></i>
-                        </a>
-                        <div class="menu-dropdown-wrapper">
-                          <ul class="menu-dropdown-content">
-                            <li>
-                              <a href="#">Home Clean</a>
-                            </li>
-                            <li>
-                              <a href="#">Home Collection</a>
-                            </li>
-                            <li>
-                              <a href="#">Home Minimal</a>
-                            </li>
-                            <li>
-                              <a href="#">Home Modern</a>
-                            </li>
-                            <li>
-                              <a href="#">Home Parallax</a>
-                            </li>
-                            <li>
-                              <a href="#">Home Strong</a>
-                            </li>
-                            <li>
-                              <a href="#">Home Style</a>
-                            </li>
-                            <li>
-                              <a href="#">Home Unique</a>
-                            </li>
-                            <li>
-                              <a href="#">Home RTL</a>
-                            </li>
-                          </ul>
-                        </div>
-                      </li>
-                      <li class="menu-list-item megamenu-wrapper">
-                        <a href="shop.html" class="menu-link">
-                          Shop
-                          <i class="bi bi-chevron-down"></i>
-                        </a>
-                        <div class="menu-dropdown-wrapper">
-                          <div class="menu-dropdown-megamenu">
-                            <div class="megamenu-links">
-                              <div class="megamenu-products">
-                                <h3 class="megamenu-products-title">
-                                  SHOP SIDEBAR
-                                </h3>
-                                <ul class="megamenu-menu-list">
-                                  <li>
-                                    <a href="#">Shop Image Categories</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">Shop Standard</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">Shop Only Categories</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">Shop List</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">Shop Grid 2 Columns</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">Shop Sub Categories</a>
-                                  </li>
-                                </ul>
-                              </div>
-                              <div class="megamenu-products">
-                                <h3 class="megamenu-products-title">
-                                  FİLTER LAYOUT
-                                </h3>
-                                <ul class="megamenu-menu-list">
-                                  <li>
-                                    <a href="#">Filter Dropdown</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">Sidebar</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">Filter Side Out</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">Filter Drawer</a>
-                                  </li>
-                                </ul>
-                              </div>
-                              <div class="megamenu-products">
-                                <h3 class="megamenu-products-title">
-                                  SHOP LOADER
-                                </h3>
-                                <ul class="megamenu-menu-list">
-                                  <li>
-                                    <a href="#">Cart Page</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">Shop Pagination</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">Shop Infinity</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">Shop Load More</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">Cart Modal</a>
-                                  </li>
-                                  <li>
-                                    <a href="#">Cart Drawer</a>
-                                  </li>
-      
-                                </ul>
-                              </div>
-                            </div>
-                            <div class="megamenu-single">
-                              <!-- <a href="#"> -->
-                                <img src="img/headerImages.jpeg" alt="">
-                              <!-- </a> -->
-                              <!-- <h3 class="megamenu-single-title">
-                                NEW COLLECTION
+          <div class="container">
+            <div class="header-wrapper">
+              <div class="header-mobile">
+                <i class="bi bi-list" id="btn-menu"></i>
+              </div>
+              <div class="header-left">
+                <a href="index.html" class="logo">LOGO</a>
+              </div>
+              <div class="header-center" id="sidebar">
+                <nav class="navigation">
+                  <ul class="menu-list">
+                    <li class="menu-list-item">
+                      <a href="index.html" class="menu-link active">
+                        Home
+                        <i class="bi bi-chevron-down"></i>
+                      </a>
+                      <div class="menu-dropdown-wrapper">
+                        <ul class="menu-dropdown-content">
+                          <li>
+                            <a href="#">Home Clean</a>
+                          </li>
+                          <li>
+                            <a href="#">Home Collection</a>
+                          </li>
+                          <li>
+                            <a href="#">Home Minimal</a>
+                          </li>
+                          <li>
+                            <a href="#">Home Modern</a>
+                          </li>
+                          <li>
+                            <a href="#">Home Parallax</a>
+                          </li>
+                          <li>
+                            <a href="#">Home Strong</a>
+                          </li>
+                          <li>
+                            <a href="#">Home Style</a>
+                          </li>
+                          <li>
+                            <a href="#">Home Unique</a>
+                          </li>
+                          <li>
+                            <a href="#">Home RTL</a>
+                          </li>
+                        </ul>
+                      </div>
+                    </li>
+                    <li class="menu-list-item megamenu-wrapper">
+                      <a href="shop.html" class="menu-link">
+                        Shop
+                        <i class="bi bi-chevron-down"></i>
+                      </a>
+                      <div class="menu-dropdown-wrapper">
+                        <div class="menu-dropdown-megamenu">
+                          <div class="megamenu-links">
+                            <div class="megamenu-products">
+                              <h3 class="megamenu-products-title">
+                                SHOP SIDEBAR
                               </h3>
-                              <h4 class="megamenu-single-subtitle">
-                                Get 10 % off your first order with code HELLO10
-                              </h4>
-                              <a href="#" class="megamenu-single-button btn btn-sm">Shop Now
-                              </a> -->
+                              <ul class="megamenu-menu-list">
+                                <li>
+                                  <a href="#">Shop Image Categories</a>
+                                </li>
+                                <li>
+                                  <a href="#">Shop Standard</a>
+                                </li>
+                                <li>
+                                  <a href="#">Shop Only Categories</a>
+                                </li>
+                                <li>
+                                  <a href="#">Shop List</a>
+                                </li>
+                                <li>
+                                  <a href="#">Shop Grid 2 Columns</a>
+                                </li>
+                                <li>
+                                  <a href="#">Shop Sub Categories</a>
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="megamenu-products">
+                              <h3 class="megamenu-products-title">
+                                FİLTER LAYOUT
+                              </h3>
+                              <ul class="megamenu-menu-list">
+                                <li>
+                                  <a href="#">Filter Dropdown</a>
+                                </li>
+                                <li>
+                                  <a href="#">Sidebar</a>
+                                </li>
+                                <li>
+                                  <a href="#">Filter Side Out</a>
+                                </li>
+                                <li>
+                                  <a href="#">Filter Drawer</a>
+                                </li>
+                              </ul>
+                            </div>
+                            <div class="megamenu-products">
+                              <h3 class="megamenu-products-title">
+                                SHOP LOADER
+                              </h3>
+                              <ul class="megamenu-menu-list">
+                                <li>
+                                  <a href="#">Cart Page</a>
+                                </li>
+                                <li>
+                                  <a href="#">Shop Pagination</a>
+                                </li>
+                                <li>
+                                  <a href="#">Shop Infinity</a>
+                                </li>
+                                <li>
+                                  <a href="#">Shop Load More</a>
+                                </li>
+                                <li>
+                                  <a href="#">Cart Modal</a>
+                                </li>
+                                <li>
+                                  <a href="#">Cart Drawer</a>
+                                </li>
+    
+                              </ul>
                             </div>
                           </div>
+                          <div class="megamenu-single">
+                            <!-- <a href="#"> -->
+                            <img src="img/headerImages.jpeg" alt="">
+                            <!-- </a> -->
+                            <!-- <h3 class="megamenu-single-title">
+                              NEW COLLECTION
+                            </h3>
+                            <h4 class="megamenu-single-subtitle">
+                              Get 10 % off your first order with code HELLO10
+                            </h4>
+                            <a href="#" class="megamenu-single-button btn btn-sm">Shop Now
+                            </a> -->
+                          </div>
                         </div>
-                      </li>
-                      <li class="menu-list-item">
-                        <a href="blog.html" class="menu-link">
-                          Blog
-                        </a>
-                      </li>
-                      <li class="menu-list-item">
-                        <a href="contact.html" class="menu-link">
-                          Contact
-                        </a>
-                      </li>
-                    </ul>
-                  </nav>
-                  <i class="bi-x-circle" id="close-sidebar"></i>
-                </div>
-                <div class="header-right">
-                  <div class="header-right-links">
-                    <a href="account.html" class="header-account">
-                      <i class="bi bi-person"></i>
-                    </a>
-                    <button class="search-button">
-                      <i class="bi bi-search"></i>
-                    </button>
-                    <a href="#" class="header-wishlist">
-                      <i class="bi bi-heart"></i>
-                    </a>
-                    <div class="header-cart">
-                      <a href="cart.html" class="header-cart-link">
-                        <i class="bi bi-bag"></i>
-                        <span class="header-cart-count">0</span>
+                      </div>
+                    </li>
+                    <li class="menu-list-item">
+                      <a href="blog.html" class="menu-link">
+                        Blog
                       </a>
-                    </div>
+                    </li>
+                    <li class="menu-list-item">
+                      <a href="contact.html" class="menu-link">
+                        Contact
+                      </a>
+                    </li>
+                  </ul>
+                </nav>
+                <i class="bi-x-circle" id="close-sidebar"></i>
+              </div>
+              <div class="header-right">
+                <div class="header-right-links">
+                  <a href="account.html" class="header-account">
+                    <i class="bi bi-person"></i>
+                  </a>
+                  <button class="search-button">
+                    <i class="bi bi-search"></i>
+                  </button>
+                  <a href="#" class="header-wishlist">
+                    <i class="bi bi-heart"></i>
+                  </a>
+                  <div class="header-cart">
+                    <a href="cart.html" class="header-cart-link">
+                      <i class="bi bi-bag"></i>
+                      <span class="header-cart-count">0</span>
+                    </a>
                   </div>
                 </div>
               </div>
             </div>
           </div>
-    </header>
+        </div>
+      </header>
     <!--! header end  -->
 
     <!--! modal search start  -->
@@ -349,6 +350,7 @@
     </div>
     <!--! modal dialog end  -->
 
+
     <!--! categories start  -->
     <section class="categories">
         <div class="container">
@@ -359,37 +361,37 @@
             <ul class="category-list">
                 <li class="category-item">
                     <a href="#">
-                        <img src="img/categories/categories1.png" alt="" class="category-image">
+                        <img src="img/categories/phoneM.jpeg" alt="" class="category-image">
                         <span class="category-title">Smartphone</span>
                     </a>
                 </li>
                 <li class="category-item">
                     <a href="#">
-                        <img src="img/categories/categories2.png" alt="" class="category-image">
+                        <img src="img/categories/watches.jpeg" alt="" class="category-image">
                         <span class="category-title"> Watches </span>
                     </a>
                 </li>
                 <li class="category-item">
                     <a href="#">
-                        <img src="img/categories/categories3.png" alt="" class="category-image">
+                        <img src="img/categories/electronics.jpeg" alt="" class="category-image">
                         <span class="category-title"> Electronics </span>
                     </a>
                 </li>
                 <li class="category-item">
                     <a href="#">
-                        <img src="img/categories/categories4.png" alt="" class="category-image">
+                        <img src="img/categories/furniture.jpeg" alt="" class="category-image">
                         <span class="category-title"> Furnitures </span>
                     </a>
                 </li>
                 <li class="category-item">
                     <a href="#">
-                        <img src="img/categories/categories5.png" alt="" class="category-image">
+                        <img src="img/categories/collections.jpeg" alt="" class="category-image">
                         <span class="category-title"> Collections </span>
                     </a>
                 </li>
                 <li class="category-item">
                     <a href="#">
-                        <img src="img/categories/categories6.png" alt="" class="category-image">
+                        <img src="img/categories/fashion.jpeg" alt="" class="category-image">
                         <span class="category-title"> Fashion </span>
                     </a>
                 </li>
@@ -422,7 +424,7 @@
     </section>
     <!--! products end  -->
 
-    <!--! campaign sinle start  -->
+    <!--! campaign single start  -->
     <section class="campaign-single">
         <div class="container">
             <div class="campaign-wrapper">
@@ -436,7 +438,7 @@
             </div>
         </div>
     </section>
-    <!--! campaign sinle end  -->
+    <!--! campaign single end  -->
 
     <!--! products start  -->
     <section class="products">
@@ -589,7 +591,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="product-item">
+                        <li class="product-item glide__slide">
                             <div class="product-image">
                                 <a href="#">
                                     <img src="img/products/product4/1.png" alt="" class="img1">
@@ -638,14 +640,14 @@
                         </li>
                     </ul>
                 </div>
-                <div class="glide__arrows" data-glide-el="controls">
-                    <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
-                        <i class="bi bi-chevron-left"></i>
-                    </button>
-                    <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
-                        <i class="bi bi-chevron-right"></i>
-                    </button>
-                </div>
+                <!-- <div class="glide__arrows" data-glide-el="controls">
+              <button class="glide__arrow glide__arrow--left" data-glide-dir="<">
+                <i class="bi bi-chevron-left"></i>
+              </button>
+              <button class="glide__arrow glide__arrow--right" data-glide-dir=">">
+                <i class="bi bi-chevron-right"></i>
+              </button>
+            </div> -->
             </div>
         </div>
     </section>
@@ -653,37 +655,37 @@
 
     <!--! policy start  -->
     <section class="policy">
-        <div class="container">
-            <ul class="policy-list">
-                <li class="policy-item">
-                    <i class="bi bi-truck"></i>
-                    <div class="policy-texts">
-                        <strong>FREE DELIVERY</strong>
-                        <span>From $59.89</span>
-                    </div>
-                </li>
-                <li class="policy-item">
-                    <i class="bi bi-headset"></i>
-                    <div class="policy-texts">
-                        <strong>SUPPORT 24/7</strong>
-                        <span>Online 24 hours</span>
-                    </div>
-                </li>
-                <li class="policy-item">
-                    <i class="bi bi-arrow-clockwise"></i>
-                    <div class="policy-texts">
-                        <strong> 30 DAYS RETURN</strong>
-                        <span>Simply return it within 30 days</span>
-                    </div>
-                </li>
-                <li class="policy-item">
-                    <i class="bi bi-credit-card"></i>
-                    <div class="policy-texts">
-                        <strong> PAYMENT METHOD</strong>
-                        <span>Secure Payment</span>
-                    </div>
-                </li>
+        <div data-flickity='{ "freeScroll": true, "contain": true, "prevNextButtons": false, "pageDots": false }'>
+            <!-- <ul class="policy-list"> -->
+            <ul class="policy-item carousel-cell">
+                <i class="bi bi-truck"></i>
+                <div class="policy-texts">
+                    <strong>FREE DELIVERY</strong>
+                    <span>From $59.89</span>
+                </div>
             </ul>
+            <ul class="policy-item carousel-cell">
+                <i class="bi bi-headset"></i>
+                <div class="policy-texts">
+                    <strong>SUPPORT 24/7</strong>
+                    <span>Online 24 hours</span>
+                </div>
+            </ul>
+            <ul class="policy-item carousel-cell ">
+                <i class="bi bi-arrow-clockwise"></i>
+                <div class="policy-texts">
+                    <strong> 30 DAYS RETURN</strong>
+                    <span>Simply return it within 30 days</span>
+                </div>
+            </ul>
+            <ul class="policy-item carousel-cell">
+                <i class="bi bi-credit-card"></i>
+                <div class="policy-texts">
+                    <strong> PAYMENT METHOD</strong>
+                    <span>Secure Payment</span>
+                </div>
+            </ul>
+            <!-- </ul> -->
         </div>
     </section>
     <!--! policy end  -->
@@ -847,12 +849,9 @@
                 <div class="footer-copyright">
                     <div class="site-copyright">
                         <p>
-                            Copyright 2022 © E-Commerce Theme. All right reserved. Powered by Emin Basbayan.
+                            Copyright 2022 © E-Commerce Theme. All right reserved. Powered by Sefa Umut Sarıkaya.
                         </p>
                     </div>
-                    <a href="#">
-                        <img src="img/footer/cards.png" alt="">
-                    </a>
                     <div class="footer-menu">
                         <ul class="footer-menu-list">
                             <li class="list-item">
@@ -867,6 +866,11 @@
                         </ul>
                     </div>
                 </div>
+                <div class="footer-payment">
+                    <a href="#">
+                        <img src="img/footer/cards.png" alt="">
+                    </a>
+                </div>
             </div>
         </div>
     </footer>
@@ -876,6 +880,7 @@
     <script src="js/main.js" type="module"></script>
     <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
     <script src="js/glide.js" type="module"></script>
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </body>
 
 </html>

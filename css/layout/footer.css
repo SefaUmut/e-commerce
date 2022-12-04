@@ -8,7 +8,7 @@
 
 .footer .footer-row-wrapper {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   column-gap: 90px;
 }
 
@@ -81,7 +81,7 @@
 
 .widgets-row .footer-widgets {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
   gap: 30px;
   font-weight: 300;
@@ -184,6 +184,10 @@
 
   .footer .brand-info {
     margin-bottom: 20px;
+  }
+
+  .copyright-row .footer-payment a img {
+   display: none;
   }
 
   .footer-copyright {

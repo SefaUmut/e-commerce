@@ -154,11 +154,11 @@
  }
 
 .product-wrapper .glide__arrow--left {
-  left: -60px;
+  left: 10px;
 }
 
 .product-wrapper .glide__arrow--right {
-  right: -60px;
+  right: 10px;
 }
 
 .product-wrapper .glide__arrow i {

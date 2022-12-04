@@ -118,6 +118,20 @@
   }
 }
 
+@media (max-width: 640px) {
+  .slider-title {
+    font-size: 20px !important;
+  }
+
+  .slider-heading {
+    font-size: 36px !important;
+  }
+
+  .slider-buttons {
+    display: none !important;
+  }
+}
+
 @media (max-width: 768px) {
   .slider-item {
     height: calc(100vh - 155px);

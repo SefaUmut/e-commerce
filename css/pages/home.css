@@ -88,12 +88,12 @@
 
 /*! brands start  */
 .brands {
-  padding: 10px 20px;
+  padding: 10px 0;
   background-color: #fffbfb;
 }
 
 .brands .carousel-cell {
-  width: 300px;
+  width: 200px;
   counter-increment: carousel-cell;
 }
 
@@ -103,8 +103,8 @@
 }
 
 .brands ul a img {
-  width: 90px;
-  height: 90px;
+  width: 70px;
+  height: 70px;
 }
 
 /*
