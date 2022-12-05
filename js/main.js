@@ -20,6 +20,14 @@ cartItems.innerHTML = localStorage.getItem("cart")
   : "0";
 //! add cartItems to localStorage end
 
+//! add heartItems to localStorage start
+const heartItems = document.querySelector(".header-cart-heart");
+  
+heartItems.innerHTML = localStorage.getItem("cartHeart")
+  ? JSON.parse(localStorage.getItem("cartHeart")).length
+  : "0";
+//! add heartItems to localStorage end
+
 //! modal dialog start
 const modalDialogDOM = document.querySelector(".modal-dialog");
 const modalContentDOM = document.querySelector(".modal-dialog .modal-content");

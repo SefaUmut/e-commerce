@@ -4,6 +4,10 @@ let cart = localStorage.getItem("cart")
   ? JSON.parse(localStorage.getItem("cart"))
   : [];
 
+  let cartHeart = localStorage.getItem("cartHeart")
+  ? JSON.parse(localStorage.getItem("cartHeart"))
+  : [];
+
 function addToCart(products) {
   const cartItems = document.querySelector(".header-cart-count");
   const buttons = [...document.getElementsByClassName("add-to-cart")];
@@ -22,6 +26,29 @@ function addToCart(products) {
         localStorage.setItem("cart", JSON.stringify(cart));
         button.setAttribute("disabled", "disabled");
         cartItems.innerHTML = cart.length;
+      });
+    }
+  });
+}
+
+function addToHeart(products) {
+  const cartItems = document.querySelector(".header-cart-heart");
+  const buttons = [...document.getElementsByClassName("add-to-heart")];
+  buttons.forEach((button) => {
+    const inCart = cartHeart.find((item) => item.id === Number(button.dataset.id));
+    if (inCart) {
+      button.setAttribute("disabled", "disabled");
+    } else {
+      button.addEventListener("click", function (e) {
+        e.preventDefault();
+        const id = e.target.dataset.id;
+        const findProduct = products.find(
+          (product) => product.id === Number(id)
+        );
+        cartHeart.push({ ...findProduct, quantity: 1 });
+        localStorage.setItem("cartHeart", JSON.stringify(cartHeart));
+        button.setAttribute("disabled", "disabled");
+        cartItems.innerHTML = cartHeart.length;
       });
     }
   });
@@ -80,7 +107,7 @@ function productsFunc(products) {
           <button class="add-to-cart" data-id=${item.id}>
             <i class="bi bi-basket-fill"></i>
           </button>
-          <button>
+          <button class="add-to-heart" data-id=${item.id}>
             <i class="bi bi-heart-fill"></i>
           </button>
           <a href="#" class="product-link" data-id=${item.id}>
@@ -95,6 +122,7 @@ function productsFunc(products) {
     `;
     productsContainer ? (productsContainer.innerHTML = results) : "";
     addToCart(products);
+    addToHeart(products);
   });
   product1();
   productRoute();
