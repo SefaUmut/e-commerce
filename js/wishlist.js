@@ -5,7 +5,7 @@ let cart = localStorage.getItem("cartHeart")
 let cartSelect = localStorage.getItem("cart") ? JSON.parse(localStorage.getItem("cart")) : [];
 const products = JSON.parse(localStorage.getItem("products"));
 
-
+// test commit
 const checkedOut = () => {
   const btns = document.querySelectorAll(".addedChart");
   let cartItems = document.querySelector(".header-cart-count");
